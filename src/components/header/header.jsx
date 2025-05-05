@@ -9,7 +9,6 @@ import sumka from "../../assets/sumka.png";
 const Header = ({ search, handleSearch }) => {
   return (
     <header className="w-[90%] m-auto">
-      {/* Yuqori panel */}
       <div className="flex justify-between items-center bg-gray-100 px-1 h-10">
         <p className="flex gap-1 items-center">
           <i className="fa-solid fa-location-dot"></i> Shahar: Toshkent
@@ -25,11 +24,9 @@ const Header = ({ search, handleSearch }) => {
         </div>
       </div>
 
-      {/* Logo + Search + Icons */}
       <div className="flex flex-col sm:flex-row sm:my-0 my-5 items-center justify-between gap-5 h-20">
         <img src={logo} alt="logo" />
         
-        {/* Katalog va qidiruv (faqat katta ekran uchun) */}
         <div className="xl:flex items-center gap-5 hidden">
           <button className="bg-purple-100 text-purple-600 px-3 py-2 rounded hidden sm:flex items-center gap-1 font-semibold">
             <i className="fa-solid fa-bars"></i> Katalog
@@ -47,7 +44,6 @@ const Header = ({ search, handleSearch }) => {
           </div>
         </div>
 
-        {/* Foydalanuvchi ikonkalari */}
         <div>
           <ul className="flex items-center gap-3">
             <li className="flex items-center gap-2">
@@ -63,7 +59,6 @@ const Header = ({ search, handleSearch }) => {
         </div>
       </div>
 
-      {/* Responsive search (kichik ekranlar uchun) */}
       <div className="flex items-center sm:gap-5 justify-center w-full mb-5 xl:hidden">
         <button className="bg-purple-100 text-purple-600 px-3 py-2 rounded flex items-center gap-1 font-semibold">
           <i className="fa-solid fa-bars"></i> Katalog
@@ -81,7 +76,6 @@ const Header = ({ search, handleSearch }) => {
         </div>
       </div>
 
-      {/* Pastgi banner menyular */}
       <div>
         <ul className="flex gap-5 items-center justify-between flex-wrap">
           <li className="flex gap-1 items-center">

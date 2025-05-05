@@ -4,11 +4,10 @@ import Footer from './components/footer/footer'
 import Card from './components/card/card'
 
 const App = () => {
-  const [data, setData] = useState([]);         // Barcha data
-  const [filtered, setFiltered] = useState([]); // Filtrlab chiqariladigan data
-  const [search, setSearch] = useState("");     // Inputdagi matn
+  const [data, setData] = useState([]);    
+  const [filtered, setFiltered] = useState([]); 
+  const [search, setSearch] = useState("");     
 
-  // Ma'lumotni olish (db.json dan)
   useEffect(() => {
     fetch("http://localhost:3001/produc")
       .then((res) => res.json())
@@ -18,7 +17,6 @@ const App = () => {
       });
   }, []);
 
-  // Qidiruv funksiyasi
   const handleSearch = (e) => {
     const value = e.target.value.toLowerCase();
     setSearch(value);
